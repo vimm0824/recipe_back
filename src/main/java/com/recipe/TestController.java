@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -38,5 +39,11 @@ public class TestController {
 	@GetMapping("/test3")
 	public UserEntity test3() {
 		return userService.getUserById(1L);
+	}
+	
+	@GetMapping("/test4")
+	public String test4(Model model) {
+		model.addAttribute("test", "바보 멍청이");
+		return "test";
 	}
 }
