@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>RECIPE</title>
+    <!--[if lt IE 9]>
+    <script src="/static/vendor/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/static/vendor/respond/dest/respond.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- s:: header -->
+    <header id="header" th:fragment="header">
+        <div class="header">
+            <div class="inner">
+                <div class="logo">RECIPE</div>
+                <search class="search-form">
+                    <form action="./search/">
+                        <label class="label" for="search">Find a Recipe</label>
+                        <input type="search" id="search" name="search" />
+                        <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                    </form>
+                </search>
+                <nav class="util">
+                    <div class="login"><a href="#n">로그인</a></div>
+                    <div class="signup"><a href="#n">회원가입</a></div>
+                </nav>
+            </div>
+        </div>
+        <div class="gnb">
+            <ul class="inner">
+                <li class="gnb__item"><a href="#n">레시피</a></li>
+                <li class="gnb__item"><a href="#n">추천</a></li>
+                <li class="gnb__item"><a href="#n">커뮤니티</a></li>
+                <li class="gnb__item"><a href="#n">마이페이지</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- e:: header -->
+</body>
+</html>

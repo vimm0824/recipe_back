@@ -1,0 +1,46 @@
+@import "../common.scss";
+
+.container {
+    // 회원 가입
+    &--signup {
+        width: 40.625rem; // 650px
+        margin: 0 auto;
+        
+        label { width: 6.25rem; } // 10px
+        
+        .term {
+            margin-top: 3.125rem; // 50px
+            &__tit {
+                font-size: 1.75rem; // 28px
+                font-family: $fw700;
+            }
+            &__box {
+                margin: .9375rem 0 3.125rem; // 15px 50px
+                padding: 1.875rem; // 30px
+                border: .0625rem solid #cccccc;
+            }
+        }
+    }
+
+    // 로그인
+    &--login {
+        width: 18.75rem; // 300px
+        margin: 0 auto;
+
+        label { display: none; }
+        input { width: 100%; }
+
+        .login {
+            &__link {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1.875rem; // 30px
+                padding-top: 1.875rem; // 30px
+                border-top: .0625rem solid #cccccc;
+                color: #bbbbbb;
+                font-size: .875rem; // 14px
+                font-family: $fw300;
+            }
+        }
+    }
+}

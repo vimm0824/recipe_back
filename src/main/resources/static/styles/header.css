@@ -1,0 +1,53 @@
+.inner {
+  max-width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8.125rem;
+  border-bottom: 0.3125rem solid #ff0000;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: "NanumSquareExtraBold";
+  color: #FAB815;
+}
+
+.util {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.util div:last-child {
+  position: relative;
+  margin-left: 0.625rem;
+  padding-left: 0.625rem;
+}
+.util div:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 0.0625rem;
+  height: 100%;
+  background-color: #000000;
+}
