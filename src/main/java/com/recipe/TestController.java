@@ -1,24 +1,30 @@
 package com.recipe;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import javax.swing.text.Caret;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.recipe.infra.controller.api.openApi.RecipeOpenApi;
 import com.recipe.infra.entity.UserEntity;
 import com.recipe.infra.service.UserService;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class TestController {
 
 	private final UserService userService;
-	
-	public TestController(UserService userService) {
-		this.userService = userService;
-	}
+	private final RecipeOpenApi api; 
 	
 	@ResponseBody
 	@GetMapping("/test1")
@@ -41,9 +47,17 @@ public class TestController {
 		return userService.getUserById(1L);
 	}
 	
-	@GetMapping("/test4")
-	public String test4(Model model) {
-		model.addAttribute("test", "바보 멍청이");
-		return "test";
+	@GetMapping("/test4/{search}/{category}/{in1}/{in2}/{in3}")
+	@ResponseBody
+	public List<Map<String, Object>> test4(Model model,
+			@PathVariable("search") String search,
+			@PathVariable("category") String category,
+			@PathVariable("in1") String in1,
+			@PathVariable("in2") String in2,
+			@PathVariable("in3") String in3
+			) {
+		List<String> ingredients = new ArrayList<>();
+		List<Map<String, Object>> result = api.getSearchOpenRecipe(search, category, ingredients);
+		return result;
 	}
 }
