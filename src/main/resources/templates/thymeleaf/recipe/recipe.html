@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RECIPE</title>
+    <!--[if lt IE 9]>
+    <script src="/static/vendor/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/static/vendor/respond/dest/respond.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../static/styles/reset.css">
+    <link rel="stylesheet" href="../../../static/styles/recipe.css">
+
+    <!-- js -->
+    <script src="../../../static/js/script.js"></script>
+</head>
+<body>
+    <div class="inner">
+        <h1 class="tit">레시피</h1>
+        <div class="container--recipe">
+            <form action="">
+                <div class="recipe-category">
+                    <div class="input-group">
+                        <h3>메뉴 검색</h3>
+                        <input type="text" class="w4">
+                    </div>
+                    <div class="input-group">
+                        <h3>재료 선택</h3>
+                        <div class="recipe__category__select">
+                            <input type="text">
+                            <span class="btn--delete">
+                                <span class="material-symbols-outlined">close</span>
+                            </span>
+                        </div>
+                        <button type="button" id="addPlus" class="btn btn--plus">
+                            <span class="material-symbols-outlined">add</span>
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <h3>카테고리 선택</h3>
+                        <div class="radio">
+                            <input type="radio" name="category" id="category_main"/>
+                            <label class="radio__label" for="category_main">메인</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="category" id="category_soup"/>
+                            <label class="radio__label" for="category_soup">찌개 & 국</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="category" id="category_side"/>
+                            <label class="radio__label" for="category_side">반찬</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="category" id="category_dessert"/>
+                            <label class="radio__label" for="category_dessert">후식</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn">검색</button>
+                </div>
+            </form>
+
+            <div class="recipe-result">
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/한옥정.jpg" alt="">
+                    <h3 class="menuname">한옥정
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">50</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/갓잇.jpg" alt="">
+                    <h3 class="menuname">갓잇
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">8</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/고베규카츠.jpg" alt="">
+                    <h3 class="menuname">고베규카츠
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">88</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/윤밀원.jpg" alt="">
+                    <h3 class="menuname">윤밀원
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">129</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/이가네양꼬치.jpg" alt="">
+                    <h3 class="menuname">이가네양꼬치
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">33</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/대림국수.jpg" alt="">
+                    <h3 class="menuname">대림국수
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">21</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/대흥양다리바베큐.jpg" alt="">
+                    <h3 class="menuname">대흥양다리바베큐
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">98</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/정통집.jpg" alt="">
+                    <h3 class="menuname">정통집
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">46</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/통돼지두루치기.jpg" alt="">
+                    <h3 class="menuname">통돼지두루치기
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">2</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/호랑이흥취.jpg" alt="">
+                    <h3 class="menuname">호랑이흥취
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">432</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/용용선생.jpg" alt="">
+                    <h3 class="menuname">용용선생
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">432</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+                <div class="recipe-result__box">
+                    <img src="../../../static/image/recipe/또래끼리.jpg" alt="">
+                    <h3 class="menuname">또래끼리
+                        <p class="like">
+                            <span class="material-symbols-outlined">favorite</span>
+                            <span class="like__num">432</span>
+                        </p>
+                    </h3>
+                    <p class="nickname">mowinjji</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const test = document.getElementById("addPlus");
+        test.addEventListener("click", function() {            
+        });
+
+        const a = document.getElementsByClassName("recipe__category__select");
+        if (a.length == 3) {
+            test.style.display = 'none';
+        } else if (a.length == 1) {
+            document.querySelector('.btn--delete').style.display = 'none';
+        } else {
+            test.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

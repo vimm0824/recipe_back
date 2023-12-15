@@ -1,4 +1,4 @@
-button {
+.btn {
     height: 2.5rem; // 40px
     padding: 0 1.25rem; // 20px
     border-radius: .1875rem; // 3px
@@ -24,5 +24,25 @@ button {
         height: 2rem; // 32px
         padding: 0 .9375rem; // 15px
         font-size: .875rem; // 14px
+    }
+}
+
+.btn {
+    &--delete {
+        position: absolute;
+        top: -0.5rem; // 8px
+        right: -0.5rem; // 8px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        
+        .material-symbols-outlined {
+            font-size: 1.125rem; // 18px
+        }
     }
 }

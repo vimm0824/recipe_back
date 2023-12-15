@@ -30,7 +30,7 @@
         label { display: none; }
         input { width: 100%; }
 
-        .login {
+        &.login {
             &__link {
                 display: flex;
                 justify-content: space-between;
@@ -38,6 +38,13 @@
                 padding-top: 1.875rem; // 30px
                 border-top: .0625rem solid #cccccc;
                 color: #bbbbbb;
+                font-size: .875rem; // 14px
+                font-family: $fw300;
+            }
+
+            .timer {
+                margin-top: .3125rem; // 5px
+                color: #ff7878;
                 font-size: .875rem; // 14px
                 font-family: $fw300;
             }
