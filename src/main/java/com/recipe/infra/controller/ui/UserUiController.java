@@ -16,7 +16,7 @@ public class UserUiController {
 	 */
 	@GetMapping("/log_in")
 	public String logIn() {
-		return "users/login";
+		return "user/login";
 	}
 	
 	/**
@@ -24,11 +24,13 @@ public class UserUiController {
 	 */
 	@GetMapping("/sign_up")
 	public String signUp() {
-		return "users/signup"; 
+		return "user/signup"; 
 	}
-	
+	/**
+	 * 비밀번호 찾기 ui
+	 */
 	@GetMapping("/find_password")
 	public String findPassword() {
-		return "";
+		return "user/email";
 	}
 }

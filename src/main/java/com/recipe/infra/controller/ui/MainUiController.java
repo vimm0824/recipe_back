@@ -11,6 +11,6 @@ public class MainUiController {
 
 	@GetMapping("/main")
 	public String mainPage() {
-		return "";
+		return "index";
 	}
 }

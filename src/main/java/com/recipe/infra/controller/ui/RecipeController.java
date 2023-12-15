@@ -12,6 +12,11 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/recipe")
 public class RecipeController {
 
+	@GetMapping("/main")
+	public String mainRecipe() {
+		return "recipe/recipe";
+	}
+	
 	@GetMapping("/search")
 	public String searchRecipe() {
 		return "";
