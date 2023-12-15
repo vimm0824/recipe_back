@@ -21,9 +21,12 @@
     <script src="../../../static/js/script.js"></script>
 </head>
 <body>
+    
+    <div th:replace="~{thymeleaf/layouts/header :: header}"></div>
+    
     <div class="inner">
         <h1 class="tit">로그인</h1>
-        <div class="container--login login">
+        <div class="container__login login">
             <div class="login__form">
                 <form action="">
                     <div class="input-group">
