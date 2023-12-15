@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <title>RECIPE</title>
@@ -22,7 +22,7 @@
 </head>
 <body>
     
-    <div th:replace="~{thymeleaf/layouts/header :: header}"></div>
+    <th:block th:replace="layouts/header :: headerFragment"></th:block>
     
     <div class="inner">
         <h1 class="tit">로그인</h1>

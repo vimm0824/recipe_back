@@ -1,17 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"></html>
-<head>
-    <meta charset="UTF-8">
-    <title>RECIPE</title>
-    <!--[if lt IE 9]>
-    <script src="/static/vendor/html5shiv/dist/html5shiv.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="/static/vendor/respond/dest/respond.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-    <!-- s:: header -->
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="headerFragment">
+  	<!-- s:: header -->
     <header id="header" th:fragment="header">
         <div class="header">
             <div class="inner">
@@ -39,5 +29,5 @@
         </div>
     </header>
     <!-- e:: header -->
-</body>
+</th:block>
 </html>
