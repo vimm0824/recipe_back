@@ -1,36 +1,28 @@
 @import "../common.scss";
 
 .container {
-    // 회원 가입
-    &--signup {
-        width: 40.625rem; // 650px
+    &__user {
+        width: 25rem; // 400px
         margin: 0 auto;
+        label { margin-bottom: .625rem; } // 10px
         
-        label { width: 6.25rem; } // 10px
-        
+        // 회원가입 - 약관동의
         .term {
-            margin-top: 3.125rem; // 50px
+            margin: 3.125rem 0; // 50px
             &__tit {
+                margin-bottom: .9375rem; // 15px
                 font-size: 1.75rem; // 28px
                 font-family: $fw700;
             }
             &__box {
-                margin: .9375rem 0 3.125rem; // 15px 50px
+                margin-bottom: .9375rem; // 15px
                 padding: 1.875rem; // 30px
                 border: .0625rem solid #cccccc;
             }
         }
-    }
 
-    // 로그인
-    &--login {
-        width: 18.75rem; // 300px
-        margin: 0 auto;
-
-        label { display: none; }
-        input { width: 100%; }
-
-        &.login {
+        // login
+        .login {
             &__link {
                 display: flex;
                 justify-content: space-between;
@@ -41,13 +33,14 @@
                 font-size: .875rem; // 14px
                 font-family: $fw300;
             }
+        }
 
-            .timer {
-                margin-top: .3125rem; // 5px
-                color: #ff7878;
-                font-size: .875rem; // 14px
-                font-family: $fw300;
-            }
+        // 비밀번호 찾기
+        .timer {
+            margin-top: .3125rem; // 5px
+            color: #ff7878;
+            font-size: .875rem; // 14px
+            font-family: $fw300;
         }
     }
 }

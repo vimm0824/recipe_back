@@ -4,57 +4,15 @@
     <meta charset="UTF-8">
     <title>RECIPE</title>
     <th:block th:replace="layouts/head :: head"></th:block>
-    <!-- recipe/recipe -->
-    <link rel="stylesheet" href="../../../static/styles/recipe.css">
+    <!-- recommend -->
 </head>
 <body>
     <th:block th:replace="layouts/header :: headerFragment"></th:block>
     
-    <!-- s::recipe -->
+    <!-- s::recommend -->
     <div class="inner">
-        <h1 class="tit">레시피</h1>
-        <div class="container__recipe">
-            <form action="">
-                <div class="recipe-category">
-                    <div class="input-group flex">
-                        <h3>메뉴 검색</h3>
-                        <input type="text" class="w4">
-                    </div>
-                    <div class="input-group flex">
-                        <h3>재료 선택</h3>
-                        <div class="recipe-category__select">
-                            <input type="text">
-                            <span class="btn--delete">
-                                <span class="material-symbols-outlined">close</span>
-                            </span>
-                        </div>
-                        <button type="button" id="addPlus" class="btn btn--plus">
-                            <span class="material-symbols-outlined">add</span>
-                        </button>
-                    </div>
-                    <div class="input-group flex">
-                        <h3>카테고리 선택</h3>
-                        <div class="radio">
-                            <input type="radio" name="category" id="category_main"/>
-                            <label class="radio__label" for="category_main">메인</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" name="category" id="category_soup"/>
-                            <label class="radio__label" for="category_soup">찌개 & 국</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" name="category" id="category_side"/>
-                            <label class="radio__label" for="category_side">반찬</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" name="category" id="category_dessert"/>
-                            <label class="radio__label" for="category_dessert">후식</label>
-                        </div>
-                    </div>
-                    <button type="button" class="btn">검색</button>
-                </div>
-            </form>
-
+        <h1 class="tit">추천</h1>
+        <div class="container__recommend">
             <div class="img">
                 <div class="img__box">
                     <img src="../../../static/image/recipe/한옥정.jpg" alt="">
@@ -191,7 +149,7 @@
             </div>
         </div>
     </div>
-    <!-- e::recipe -->
+    <!-- e::recommend -->
 
     <th:block th:replace="layouts/footer :: footerFragment"></th:block>
 </body>

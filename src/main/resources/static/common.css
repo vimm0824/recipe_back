@@ -282,8 +282,17 @@
   width: 100% !important;
 }
 
+.mauto {
+  margin: 0 auto;
+}
+
 .text-center {
   text-align: center;
+}
+
+body {
+  position: relative;
+  height: 100vh;
 }
 
 .inner {
@@ -301,6 +310,12 @@
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 2.5rem;
   padding: 0 1.25rem;
   border-radius: 0.1875rem;
@@ -318,7 +333,7 @@
   font-size: 1.25rem;
 }
 .btn--small {
-  height: 2rem;
+  height: 1.75rem;
   padding: 0 0.9375rem;
   font-size: 0.875rem;
 }
@@ -346,6 +361,31 @@
   font-size: 1.125rem;
 }
 
+.none {
+  display: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 select {
   width: 100%;
   height: 2.5rem;
@@ -362,7 +402,7 @@ select {
   display: none;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=file] {
   width: 100%;
   height: 2.5rem;
   padding: 0 0.9375rem;
@@ -370,25 +410,20 @@ input[type=text], input[type=password] {
   border-radius: 0.1875rem;
 }
 
-.input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin-bottom: 0.9375rem;
-}
-.input-group label {
-  display: inline-block;
-  margin-right: 0.625rem;
-  font-family: "NanumBarunGothicBold";
-}
-.input-group input[type=text], .input-group input[type=password] {
-  width: 12.5rem;
+textarea {
+  padding: 0 0.9375rem;
+  border: 0.0625rem solid #bbbbbb;
+  border-radius: 0.1875rem;
 }
 
+.input-group {
+  width: 100%;
+  margin-bottom: 1.875rem;
+}
+.input-group label {
+  display: block;
+  font-family: "NanumBarunGothicBold";
+}
 .search-form {
   position: relative;
 }
@@ -398,7 +433,7 @@ input[type=text], input[type=password] {
 }
 .search-form button {
   position: absolute;
-  top: 0.3125rem;
+  top: 0.5625rem;
   right: 0.3125rem;
   color: #bbbbbb;
 }
@@ -460,14 +495,13 @@ input[type=text], input[type=password] {
           box-shadow: none;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.none {
-  display: none;
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9.375rem;
+  background-color: #eeeeee;
 }
 
 .header {
@@ -542,7 +576,50 @@ input[type=text], input[type=password] {
   color: #5a5a5a;
 }
 
-.footer {
-  height: 9.375rem;
-  background-color: #eeeeee;
+.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+.img__box {
+  width: calc((100% - 61px) / 4);
+  margin-top: 3.125rem;
+  margin-right: 1.25rem;
+}
+.img__box:nth-child(4n) {
+  margin-right: 0;
+}
+.img__box img {
+  width: 100%;
+}
+.img__box .menuname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.625rem;
+}
+.img__box .menuname p {
+  margin-left: 0.625rem;
+  color: #ff9494;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.img__box .menuname p .material-symbols-outlined {
+  font-size: 1.25rem;
+}
+.img__box .menuname p__num {
+  font-size: 0.875rem;
+}
+.img__box .nickname {
+  margin-top: 5px;
+  color: #cccccc;
 }

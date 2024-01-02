@@ -1,6 +1,13 @@
+.mauto { margin: 0 auto; }
+
 .text-center { text-align: center; }
 
 // ===================
+
+body {
+    position: relative;
+    height: 100vh;
+}
 
 .inner {
     max-width: 1200px;

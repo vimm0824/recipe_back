@@ -624,43 +624,75 @@ textarea {
   color: #cccccc;
 }
 
-.container__user {
-  width: 25rem;
-  margin: 0 auto;
+.container__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
-.container__user label {
-  margin-bottom: 0.625rem;
-}
-.container__user .term {
-  margin: 3.125rem 0;
-}
-.container__user .term__tit {
-  margin-bottom: 0.9375rem;
-  font-size: 1.75rem;
-  font-family: "NanumBarunGothicBold";
-}
-.container__user .term__box {
-  margin-bottom: 0.9375rem;
+.container__review .review__box {
+  width: calc((100% - 41px) / 3);
+  margin-top: 3.125rem;
+  margin-right: 1.25rem;
   padding: 1.875rem;
-  border: 0.0625rem solid #cccccc;
+  border: 0.0625rem solid #bbbbbb;
 }
-.container__user .login__link {
+.container__review .review__box:nth-child(3n) {
+  margin-right: 0;
+}
+.container__review .review__box img {
+  width: 100%;
+}
+.container__review .review__box__nickname {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 1.875rem;
-  padding-top: 1.875rem;
-  border-top: 0.0625rem solid #cccccc;
-  color: #bbbbbb;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.3125rem;
+}
+.container__review .review__box__nickname .material-symbols-outlined {
+  color: #ffe600;
+  letter-spacing: -0.3125rem;
+}
+.container__review .review__box__txt {
+  color: #cccccc;
   font-size: 0.875rem;
   font-family: "NanumBarunGothicExtraLight";
 }
-.container__user .timer {
-  margin-top: 0.3125rem;
-  color: #ff7878;
-  font-size: 0.875rem;
-  font-family: "NanumBarunGothicExtraLight";
+.container__review .review__box__tit {
+  margin-top: 0.9375rem;
+  font-size: 1.25rem;
+  font-family: "NanumBarunGothicBold";
+}
+.container__review .review__write img {
+  width: 100%;
+}
+.container__review .review__write > div {
+  width: 50%;
+}
+.comment {
+  margin-top: 1.25rem;
+}
+.comment__area {
+  margin-top: 0.9375rem;
+}
+.comment__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.comment__content h3 {
+  margin-right: 0.9375rem;
 }

@@ -1,7 +1,7 @@
 .label {display: none;}
 
 input {
-    &[type="text"], &[type="password"] {
+    &[type="text"], &[type="password"], &[type="file"] {
         width: 100%;
         height: 2.5rem; // 32px
         padding: 0 .9375rem; // 15px
@@ -10,19 +10,24 @@ input {
     }
 }
 
+textarea {
+    padding: 0 .9375rem; // 15px
+    border: .0625rem solid $color-input;
+    border-radius: .1875rem; // 3px
+}
+
 .input-group {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     width: 100%;
-    margin-bottom: .9375rem; // 15px
+    margin-bottom: 1.875rem; // 30px
     label {
-        display: inline-block;
-        margin-right: .625rem; // 10px
+        display: block;
         font-family: $fw700;
     }
     input {
         &[type="text"], &[type="password"] {
-            width: 12.5rem; // 200px
+            // width: 12.5rem; // 200px
         }
     }
 }
@@ -35,7 +40,7 @@ input {
     }
     button {
         position: absolute;
-        top: .3125rem; // 5px
+        top: .5625rem; // 9px
         right: .3125rem; // 5px
         color: $color-input;
     }

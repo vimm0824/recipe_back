@@ -282,17 +282,8 @@
   width: 100% !important;
 }
 
-.mauto {
-  margin: 0 auto;
-}
-
 .text-center {
   text-align: center;
-}
-
-body {
-  position: relative;
-  height: 100vh;
 }
 
 .inner {
@@ -310,12 +301,6 @@ body {
 }
 
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 2.5rem;
   padding: 0 1.25rem;
   border-radius: 0.1875rem;
@@ -333,7 +318,7 @@ body {
   font-size: 1.25rem;
 }
 .btn--small {
-  height: 1.75rem;
+  height: 2rem;
   padding: 0 0.9375rem;
   font-size: 0.875rem;
 }
@@ -361,29 +346,14 @@ body {
   font-size: 1.125rem;
 }
 
-.none {
-  display: none;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.justify-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.justify-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.none {
+  display: none;
 }
 
 select {
@@ -402,7 +372,7 @@ select {
   display: none;
 }
 
-input[type=text], input[type=password], input[type=file] {
+input[type=text], input[type=password] {
   width: 100%;
   height: 2.5rem;
   padding: 0 0.9375rem;
@@ -410,20 +380,25 @@ input[type=text], input[type=password], input[type=file] {
   border-radius: 0.1875rem;
 }
 
-textarea {
-  padding: 0 0.9375rem;
-  border: 0.0625rem solid #bbbbbb;
-  border-radius: 0.1875rem;
-}
-
 .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  margin-bottom: 1.875rem;
+  margin-bottom: 0.9375rem;
 }
 .input-group label {
-  display: block;
+  display: inline-block;
+  margin-right: 0.625rem;
   font-family: "NanumBarunGothicBold";
 }
+.input-group input[type=text], .input-group input[type=password] {
+  width: 12.5rem;
+}
+
 .search-form {
   position: relative;
 }
@@ -433,7 +408,7 @@ textarea {
 }
 .search-form button {
   position: absolute;
-  top: 0.5625rem;
+  top: 0.3125rem;
   right: 0.3125rem;
   color: #bbbbbb;
 }
@@ -496,10 +471,6 @@ textarea {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   height: 9.375rem;
   background-color: #eeeeee;
 }
@@ -603,7 +574,7 @@ textarea {
           align-items: center;
   margin-top: 0.625rem;
 }
-.img__box .menuname p {
+.img__box .menuname .like {
   margin-left: 0.625rem;
   color: #ff9494;
   display: -webkit-box;
@@ -613,54 +584,13 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
-.img__box .menuname p .material-symbols-outlined {
+.img__box .menuname .like .material-symbols-outlined {
   font-size: 1.25rem;
 }
-.img__box .menuname p__num {
+.img__box .menuname .like__num {
   font-size: 0.875rem;
 }
 .img__box .nickname {
   margin-top: 5px;
   color: #cccccc;
-}
-
-.container__user {
-  width: 25rem;
-  margin: 0 auto;
-}
-.container__user label {
-  margin-bottom: 0.625rem;
-}
-.container__user .term {
-  margin: 3.125rem 0;
-}
-.container__user .term__tit {
-  margin-bottom: 0.9375rem;
-  font-size: 1.75rem;
-  font-family: "NanumBarunGothicBold";
-}
-.container__user .term__box {
-  margin-bottom: 0.9375rem;
-  padding: 1.875rem;
-  border: 0.0625rem solid #cccccc;
-}
-.container__user .login__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 1.875rem;
-  padding-top: 1.875rem;
-  border-top: 0.0625rem solid #cccccc;
-  color: #bbbbbb;
-  font-size: 0.875rem;
-  font-family: "NanumBarunGothicExtraLight";
-}
-.container__user .timer {
-  margin-top: 0.3125rem;
-  color: #ff7878;
-  font-size: 0.875rem;
-  font-family: "NanumBarunGothicExtraLight";
 }
