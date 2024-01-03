@@ -1,10 +1,10 @@
 .btn {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     height: 2.5rem; // 40px
     padding: 0 1.25rem; // 20px
     border-radius: .1875rem; // 3px
     background-color: #dddddd;
+    line-height: 2.5rem; // 40px
 }
 
 // type
@@ -21,11 +21,13 @@
         height: 3.125rem; // 50px
         padding: 0 1.875rem; // 30px
         font-size: 1.25rem; // 20px
+        line-height: 3.125rem; // 50px
     }
     &--small {
         height: 1.75rem; // 28px
         padding: 0 .9375rem; // 15px
         font-size: .875rem; // 14px
+        line-height: 1.75rem; // 28px
     }
 }
 

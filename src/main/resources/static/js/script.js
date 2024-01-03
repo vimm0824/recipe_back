@@ -6,10 +6,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 // user/email
-function $ComTimer(){
-    //prototype extend
-}
-
+function $ComTimer(){ }
 $ComTimer.prototype = {
     comSecond : ""
     , fnCallback : function(){}
@@ -30,7 +27,6 @@ $ComTimer.prototype = {
     }
 }
 
-
 const sendEmail = document.getElementById("sendEmail");
 sendEmail.addEventListener("click", function() {
     sendEmail.innerText = "인증번호 확인";
@@ -49,14 +45,23 @@ if (sendEmail.innerText === "인증번호 보내기") {
 
 // recipe/recipe
 const addPlus = document.getElementById("addPlus");
-addPlus.addEventListener("click", function() {            
-    
-});
-const a = document.getElementsByClassName("recipe-category__select");
-if (a.length == 3) {
+addPlus.addEventListener("click", function() { });
+const recipeCategory = document.getElementsByClassName("recipe-category__select");
+if (recipeCategory.length == 3) {
     addPlus.style.display = 'none';
-} else if (a.length == 1) {
+} else if (recipeCategory.length == 1) {
     document.querySelector('.btn--delete').style.display = 'none';
 } else {
     addPlus.style.display = 'block';
 }
+
+// review/review
+const showMore = document.getElementById("showMore");
+const replyContent = document.querySelector(".reply__content");
+showMore.addEventListener("click", function() {
+    if (replyContent.style.display === 'block') {
+        replyContent.style.display = 'none';
+    } else {
+        replyContent.style.display = 'block';
+    }
+});
