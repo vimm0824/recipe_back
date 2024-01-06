@@ -1,0 +1,66 @@
+<!-- 레시피 / 등록 페이지 << 보고 지워요 -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>RECIPE</title>
+    <th:block th:replace="layouts/head :: head"></th:block>
+    <!-- recipe/write -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../static/styles/reset.css">
+    <link rel="stylesheet" href="../../../static/styles/recipe.css">
+</head>
+<body>
+    <th:block th:replace="layouts/header :: headerFragment"></th:block>
+    
+    <!-- s::write -->
+    <div class="inner">
+        <h1 class="tit">레시피</h1>
+        <div class="container__recipe">
+            <form action="">
+                <div>
+                    <div class="input-group">
+                        <label for="">레시피 제목</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="">요리 소개</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="">요리정보</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="">요리 대표 사진</label>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <p>재료</p>
+                    </div>
+                    <div>
+                        <p>요리 순서</p>
+                    </div> 
+                    <div class="input-group">
+                        <label for="">팁</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="">태그</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <a href="../recipe/recipe.html" class="btn">목록</a>
+                    <button type="button" class="btn btn--point">등록</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- e::write -->
+
+    <th:block th:replace="layouts/footer :: footerFragment"></th:block>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- 마이페이지 << 보고 지워요 -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>RECIPE</title>
+    <th:block th:replace="layouts/head :: head"></th:block>
+    <!-- mypage -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../static/styles/reset.css">
+    <link rel="stylesheet" href="../../../static/styles/mypage.css">
+</head>
+<body>
+    <th:block th:replace="layouts/header :: headerFragment"></th:block>
+    
+    <!-- s::mypage -->
+    <div class="inner">
+        <h1 class="tit">마이페이지</h1>
+        <div class="container__mypage">
+            <div class="mypage__info">
+                <a href="#n" class="block text-right"><span class="material-symbols-outlined">edit</span></a>
+                <h1>user</h1>
+                <ul>
+                    <li>
+                        <p>레시피</p>&nbsp;<span>45</span>
+                    </li>
+                    <li>
+                        <p>후기</p>&nbsp;<span>21</span>
+                    </li>
+                    <li>
+                        <p>팔로우</p>&nbsp;<span>167</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mypage__tab">
+                <!-- todo :: 굳이 ul로 안잡아도 될듯 -->
+                <ul>
+                    <li>레시피</li>
+                    <li class="on">후기</li>
+                    <li>북마크</li>
+                </ul>
+            </div>
+            <div class="mypage__content">
+                <div><img src="../../../static/image/recipe/용용선생.jpg" alt="용용선생"></div>
+                <div><img src="../../../static/image/recipe/이가네양꼬치.jpg" alt="이가네양꼬치"></div>
+                <div><img src="../../../static/image/recipe/고베규카츠.jpg" alt="고베규카츠"></div>
+                <div><img src="../../../static/image/recipe/호랑이흥취.jpg" alt="호랑이흥취"></div>
+                <div><img src="../../../static/image/recipe/대림국수.jpg" alt="대림국수"></div>
+                <div><img src="../../../static/image/recipe/갓잇.jpg" alt="갓잇"></div>
+                <div><img src="../../../static/image/recipe/대흥양다리바베큐.jpg" alt="대흥양다리바베큐"></div>
+                <div><img src="../../../static/image/recipe/윤밀원.jpg" alt="윤밀원"></div>
+                <div><img src="../../../static/image/recipe/통돼지두루치기.jpg" alt="통돼지두루치기"></div>
+            </div>
+        </div>
+    </div>
+    <!-- e::mypage -->
+
+    <th:block th:replace="layouts/footer :: footerFragment"></th:block>
+</body>
+</html>
